@@ -41,13 +41,15 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/airbnb",
-      "@vue/typescript/recommended"
+      "@vue/typescript/recommended",
+      "@vue/airbnb"
     ],
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "class-methods-use-this": 0
+    }
   },
   "browserslist": [
     "> 1%",
