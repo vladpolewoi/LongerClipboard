@@ -1,14 +1,28 @@
 {
   "manifest_version": 2,
-  "name": "__MSG_extName__",
+  "name": "LongerClipboard",
   "homepage_url": "http://localhost:8080/",
-  "description": "A Vue Browser Extension",
+  "description": "Long live the clipboard",
   "default_locale": "en",
   "permissions": [
     "activeTab",
     "<all_urls>",
-    "*://*/*"
+    "*://*/*",
+    "commands",
+    "declarativeContent",
+    "notifications",
+    "contextMenus",
+    "tabs",
+    "storage"
   ],
+  "commands": {
+    "save_handler": {
+      "suggested_key": {
+        "default": "Alt+Shift+Z"
+      },
+      "description": "Save to google sheets"
+    }
+  },
   "icons": {
     "16": "icons/logo.png",
     "48": "icons/logo.png",
